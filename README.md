@@ -1,12 +1,35 @@
 # My Portfolio Website - Overview 🚀
 
-This repository contains the open source version of my 3D portfolio website. Do check it out!
+This repository contains the open source version of my 3D portfolio website with an integrated AI-powered Customer Care API Agent. Do check it out!
+
+## 🆕 New Feature: Customer Care API Agent
+
+This project now includes a complete customer care API agent with:
+- 🤖 AI-powered intent recognition (9 intent types)
+- 💬 Beautiful floating chat widget
+- 🚀 RESTful API with real-time responses
+- 📊 Conversation management and history
+- 🎨 Modern, responsive UI
+
+**Quick Start:**
+```bash
+# Start the API server
+npm run server
+
+# Start the frontend (in a new terminal)
+npm run dev
+```
+
+📚 **Documentation:**
+- [Quick Start Guide](QUICKSTART.md) - Get started in 3 steps
+- [Complete Guide](CUSTOMER_CARE_API.md) - Full documentation
+- [Project Summary](PROJECT_SUMMARY.md) - What was built
 
 ## Instructions 🛠️
 
 I have modified the GSAP club plugins with the trial plugins, but with the trial plugin, you cannot host it⛔️. For Club plugins, check out here: [GSAP Installation](https://gsap.com/docs/v3/Installation/).
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, CSS, JavaScript
+**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, Node.js, Express, HTML, CSS, JavaScript
 
 ### Installation
 
@@ -53,9 +76,37 @@ Open your browser and navigate to `http://localhost:3000` to view the website.
 
 ## Features
 
+### Portfolio Website
 - 3D interactive UI built with ThreeJS and WebGL
 - Smooth animations using GSAP
 - Responsive design for various screen sizes
+
+### Customer Care API Agent
+- AI-powered intent recognition (greeting, billing, technical, support, etc.)
+- Real-time chat interface with typing indicators
+- Conversation history and management
+- RESTful API with 5 endpoints
+- Beautiful floating chat widget
+- Context-aware responses
+- Connection status monitoring
+
+## Available Scripts
+
+```bash
+# Frontend
+npm run dev          # Start Vite development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+
+# Backend API
+npm run server:build # Build TypeScript server
+npm run server       # Start API server
+npm run server:dev   # Start API with auto-reload
+
+# Testing
+./test-api.sh        # Run API test suite
+```
 
 ## Contributing
 
