@@ -7,7 +7,10 @@
     "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server:build": "cd server && tsc",
+    "server": "npm run server:build && node server/dist/index.js",
+    "server:dev": "nodemon --watch server --ext ts --exec 'npm run server'"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -16,16 +19,26 @@
     "@react-three/fiber": "^8.17.10",
     "@react-three/postprocessing": "^2.16.3",
     "@react-three/rapier": "^1.5.0",
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
     "@types/three": "^0.168.0",
+    "@types/uuid": "^10.0.0",
     "@vercel/analytics": "^1.4.1",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "gsap": "^3.12.7",
     "gsap-trial": "^3.12.7",
+    "nodemon": "^3.1.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.3.0",
     "three": "^0.168.0",
-    "three-stdlib": "^2.33.0"
+    "three-stdlib": "^2.33.0",
+    "ts-node": "^10.9.2",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

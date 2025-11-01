@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import "./App.css";
+import ChatWidget from "./components/ChatWidget";
 
 const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
@@ -17,6 +18,7 @@ const App = () => {
           </MainContainer>
         </Suspense>
       </LoadingProvider>
+      <ChatWidget />
     </>
   );
 };
